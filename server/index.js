@@ -11,14 +11,14 @@ const server = createServer(app);
 
 const io = new Server(server,{
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://wrapshareproto.vercel.app",
       credentials: true,
     },
   });
 
 app.use(cors({
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://wrapshareproto.vercel.app",
       credentials: true,
     },
   }))
